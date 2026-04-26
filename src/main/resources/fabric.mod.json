@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "infdevpluspaintings",
+	"version": "${version}",
+	"name": "Infdev+ Paintings Port",
+	"description": "Adds paintings from Infdev+.",
+	"authors": [
+		"Turnip Labs"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"icon": "icon.png",
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"camoweed.infdevpluspaintings.InfdevPlusPaintings"
+		],
+		"beforeGameStart": [
+			"camoweed.infdevpluspaintings.InfdevPlusPaintings"
+		],
+		"afterGameStart": [
+			"camoweed.infdevpluspaintings.InfdevPlusPaintings"
+		],
+		"recipesReady": [
+			"camoweed.infdevpluspaintings.InfdevPlusPaintings"
+		]
+	},
+	"mixins": [
+		"infdevpluspaintings.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${fabricloader}",
+		"halplibe": ">=${halplibe}",
+		"minecraft": "*",
+		"java": ">=${java}"
+	},
+	"suggests": {
+		"modmenu": ">=${modmenu}"
+	}
+}
